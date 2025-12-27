@@ -1,10 +1,16 @@
 import Title from '@/component/Title';
+import Link from 'next/link';
 import React from 'react';
 
 const About = () => {
     return (
         <div>
             <Title>Welcome to About </Title>
+
+            <nav className='space-x-5'>
+               <Link href={"/about/contact"}>Contact</Link> 
+               <Link href={"/about/teams"}>Teams</Link> 
+            </nav>
         </div>
     );
 };
